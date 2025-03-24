@@ -21,7 +21,7 @@
   services.k3s = {
     enable = true;
     role = "server"; # or "agent" for worker nodes
-    extraFlags = "--disable traefik"; # Optional, disable built-in Traefik
+    # extraFlags = "--disable traefik"; # Optional, disable built-in Traefik
   };
 
   environment.systemPackages = map lib.lowPrio [
